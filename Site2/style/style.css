@@ -1,0 +1,197 @@
+body {
+    background-color: #1d1d1d;
+    color: white;
+    font-family: Poppins;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+/*header*/
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*lead*/
+
+#lead{
+    flex-direction: column;
+    line-height: 10px;
+}
+
+/*navegação*/
+
+nav {
+    display: flex;
+    flex-direction: row;
+    float: right;
+}
+
+nav li{
+    display: inline-block;
+    margin: 20px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: aqua;
+    transition: 0.6s all;
+}
+
+#baixar{
+    border: 2px solid rgb(23, 235, 199);
+    padding: 10px;
+    border-radius: 15px;
+}
+
+#baixar:hover{
+    background-color: rgb(23, 235, 199);
+    color: white;
+    transition: 0.9s all;
+}
+
+/*Outro*/
+
+h1{
+    font-weight: 500;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+h2{
+    font-size: 56px;
+    line-height: 10px;
+}
+
+span{
+    color: aqua;
+}
+
+p{
+    line-height: 20px;
+    max-width: 500px;
+    font-weight: 300;
+}
+
+img{
+    max-width: 400px;
+    float: right;
+    padding-left: 120px;
+    margin: 0 auto;
+}
+
+/*Formulário*/
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+form [type="submit"]{
+    height: 50px;
+    width: 50%;
+    background-color: aqua;
+    color: white;
+    font-weight: bold;
+}
+
+form [type="submit"]:hober{
+    cursor: pointer;
+}
+
+input{
+    margin-top: 8px;
+    height: 20px;
+    padding: 15px;
+    border-radius: 15px;
+    border: 2px aqua solid;
+    font-size: 15px;
+}
+
+footer{
+    background-color: #1d1d1d;
+    color: aqua;
+    max-width: 100%;
+    width: 100%;
+    float:none;
+    text-align: center;
+    padding: 0px;
+    margin: 0 auto;
+    align-self: center;
+}
+
+@media screen and (max-width: 768px){
+
+    body {
+        max-width: 768px;
+        align-items: center;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    header{
+        flex-direction: column;
+    }
+
+    header h1{
+        text-align: center;
+    }
+
+    main{
+        flex-direction: column;
+        margin: 0;
+        padding: 50px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    h2{
+        font-size: 38px;
+    }
+
+    form{
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    input{
+        align-self: center;
+    }
+
+    img{
+        max-width: 70%;
+        float: none;
+        padding: 0px;
+        padding-top: 50px;
+        margin: 0 auto;
+        align-self: center;
+    }
+
+    ul{
+        text-align: center;
+    }
+
+    footer{
+        background-color: #1d1d1d;
+        color: white;
+        max-width: 70%;
+        float: none;
+        padding: 0px;
+        margin: 0 auto;
+        align-self: center;
+    }
+}
